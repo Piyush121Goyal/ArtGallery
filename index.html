@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1Artist.com</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:925px)" href="CSS/phone.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          /* background-color: rgb(80, 79, 79); */
+        }
+    
+        .swiper {
+          width: 80%; 
+          height: 400px;
+          margin: 50px auto;
+        }
+    
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 18px;
+          background: #fff;
+          border: 1px solid #ddd;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        .swiper-slide img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+        }
+      </style>
+</head>
+<body>
+   
+        <nav id="navbar">
+           <div id="logo"> <img src="Img/logos/logoPA.jpg" alt="">
+            <span class="piyush">Piyush Arts</span>
+        </div>
+           
+           <ul >
+               <li class="item"><a href="#home">Home</a></li>
+               <li class="item"><a href="#services">Artists</a></li>
+               <li class="item"><a href="#contact">Contact</a></li>
+               <li class="item"><a href="#">About us </a></li>
+           </ul>
+        </nav>
+
+        <section id="home">
+            <h1  class="h-primary" id="wel">Welcome to A1Arts</h1>
+            <p class="h-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sapiente omnis exercitationem minus ut similique! Ea, maxime corporis nulla hic numquam officiis </p>
+
+            <button class="btn" id="btn1">
+                Buy Now
+            </button>
+        </section>
+        
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="Img/img/photo-1421789665209-c9b2a435e3dc.jpg" alt="Artwork 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="Img/img/photo-1558980395-2f289089d3ec.jpg" alt="Artwork 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="Img/img/photo-1643305539013-626ebee777ed.jpg" alt="Artwork 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="Img/img/aesthatic leaves.jpg" alt="Artwork 4">
+      </div>
+    </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+        
+        
+        <section id="services">
+            <h1 class="h-primary textclass">Popular on Socials</h1>
+            <div id="service">
+                <div class="box"  >
+                    <img src="Img/img/bgim1.jpg" alt="">
+                   
+                </div>
+                <div class="box" >
+                    <img src="Img/img/waterfall.jpg" alt="">
+                    
+                </div>
+                <div class="box" id="las">
+                    <img src="Img/img/watch.jpg" alt="">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="h-primary textclass">Contact Us</h2>
+            <div id="contact-box">
+                  <form action="">
+                    <div class="group">
+                        <label for="name" >Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name" >
+                    </div>
+
+                    <div class="group">
+                        <label for="email" >Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" >
+
+                    </div>
+
+                    <div class="group">
+                        <label for="phone" >Phone</label>
+                        <input type="phone" id="phone" name="phone" placeholder="Enter your Phone no." >
+                    </div>
+
+                    <div class="group">
+                        <label for="message" >Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+
+
+
+                  </form>
+            
+            
+            
+            </div>
+        </section>
+
+        <footer class="textclass">
+            <div class="center">
+                Copyright &copy; www.PiyushArts.com. All rights reserved
+            </div>
+         </footer>
+         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script>
+
+    const swiper = new Swiper('.swiper', {
+      loop: true, 
+      autoplay: {
+        delay: 3000, 
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+            let btn = document.getElementById("btn1");
+            btn.addEventListener("click",()=>{
+               
+                alert("The site is under development. Still on the path of learning, so carry on mate!!")
+            })
+        </script>
+
+
+               
+  
+</body>
+</html>

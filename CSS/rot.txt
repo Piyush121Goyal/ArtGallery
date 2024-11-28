@@ -1,0 +1,28 @@
+.piyush:hover {
+    animation: spin 1s linear infinite; /* Spins continuously */
+    color: #1e90ff; /* Cool blue color */
+}
+
+/* Define the rotation animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#wel:hover {
+    animation: spin 1s linear infinite; /* Spins continuously */
+    color: #1e90ff; /* Cool blue color */
+}
+
+/* Define the rotation animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
